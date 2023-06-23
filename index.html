@@ -1,0 +1,1449 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*PC*/
+        @media screen and (min-width: 950px) {
+            body {
+                
+            }
+
+            #site-name {
+                font-size: 120%;
+                font-weight: bold;
+            }
+            
+
+            #header-navi {
+                display: none;
+            }
+
+            #header-open{
+                display: none;
+            }
+
+
+
+            /*各要素を横並び*/
+            #main {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+      
+            #main-left-text {
+                flex-basis: 25%;
+                flex-shrink: 0;
+                background-color: #f5f5f5;
+                padding-right: 0.5%;
+                padding-left: 0.5%;
+                margin-right: 1%;
+                font-size: 90%;
+            }
+
+            #main-left-text span {
+                color: #3cb371;
+                font-weight: bold;
+            }
+
+            #main-right-text {
+                //flex-shrink: 1;
+                flex-basis: 18%;
+                font-size: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #navi {
+                background-color: #f5f5f5;
+                margin-bottom: 10%;
+            }
+
+            #navi span {
+                color: #3cb371;
+                font-weight: bold;
+            }
+
+            #outsid-link {
+                background-color: #f5f5f5;
+                padding-left: 3%;
+            }
+
+            #outsid-link p {
+                font-weight: bold;
+             }
+
+
+            #link li{
+                margin-top: 4.5%;
+
+            }
+
+            #map-image {
+                //flex-shrink: 2;
+                position: relative;
+                margin-right: 1%;
+                
+            }
+
+            /*画像を画面縮小に合わせる*/
+            #campus {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /*キャンパスマップ画像を親要素としてボタンを配置*/
+            #button1 {
+                position: absolute;
+                left: 72.7%;
+                top: 43%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                /*カーソールを合わせたら背景色を変更*/
+                #button1:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button2 {
+                position: absolute;
+                left: 54.4%;
+                top: 33%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button2:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button3 {
+                position: absolute;
+                left: 45.5%;
+                top: 41%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button3:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button4 {
+                position: absolute;
+                left: 89%;
+                top: 40.6%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button4:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button5 {
+                position: absolute;
+                left: 35.3%;
+                top: 18.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button5:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button6 {
+                position: absolute;
+                left: 63.4%;
+                top: 55.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button6:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button7 {
+                position: absolute;
+                left: 91.3%;
+                top: 48.1%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button7:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button8 {
+                position: absolute;
+                left: 53.2%;
+                top: 62.3%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button8:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button9 {
+                position: absolute;
+                left: 56.2%;
+                top: 49.8%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button9:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button10 {
+                position: absolute;
+                left: 36.8%;
+                top: 69.3%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button10:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button11 {
+                position: absolute;
+                left: 19.5%;
+                top: 58.7%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button11:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button12 {
+                position: absolute;
+                left: 10.5%;
+                top: 50.6%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button12:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button13 {
+                position: absolute;
+                left: 44.5%;
+                top: 59.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button13:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            /*多目的広場*/
+            #square {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #square_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #square p {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            /*バツボタン*/
+            #close4 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*欅と鳩カフェ*/
+            #keyaki-cafe {
+                position: absolute;
+                top: 5%;
+                bottom: 5%;
+                background-color: rgba(0,0,0,0.7);
+                padding-top: 0;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #keyaki {
+                position: absolute;
+                top: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #cafe {
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #keyaki_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #hatocafe_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #keyaki-cafe p {
+                color: #ffffff;
+                margin: auto;
+            }
+
+            #close13 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*こもれび*/
+            #komorebi {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #komorebi_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #komorebi p {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            #close7 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*ラウンジ売店*/
+            #lounge {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #lounge_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #lounge p {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            #close9 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*体育館とグラウンド*/
+            #gym-ground {
+                position: absolute;
+                top: 5%;
+                bottom: 5%;
+                background-color: rgba(0,0,0,0.7);
+                padding-top: 0;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #gym {
+                position: absolute;
+                top: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #ground {
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #gym_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #ground_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #gym-ground p {
+                color: #ffffff;
+                margin: auto;
+            }
+
+            #close5 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+
+
+        /*タブレット*/
+        @media screen and (max-width: 950px) {
+            body {
+            }
+
+            #site-name {
+                font-size: 120%;
+                font-weight: bold;
+            }
+            #site-name:hover{
+                cursor: pointer;
+            }
+
+            #header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 2%;
+                padding-right: 2%;
+                background-color: #fff;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                z-index: 5;
+            }
+
+            #header-navi {
+                flex-basis: 30%;
+                display: flex;
+                justify-content: right;
+            }
+
+            #header-guide-button:hover {
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #header-link-button {
+                margin-left: 10%;
+            }
+
+            #header-link-button:hover{
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .header-guide-open {
+                position: fixed;
+                top: 7%;
+                right: 10%;
+                left: 30%;
+                font-size: 100%;
+                background-color: #fff;
+                border: 1px solid black;
+                padding-top: 2%;
+                padding-bottom: 3%;
+                padding-right: 3%;
+                padding-left: 3%;
+                z-index: 6;
+                display: none;
+            }
+            .header-guide-open span {
+                color: #3cb371;
+                font-weight: bold;
+            }
+
+            .header-link-open {
+                position: fixed;
+                top: 7%;
+                right: 1%;
+                left: 40%;
+                font-size: 100%;
+                list-style: none;
+                background-color: #fff;
+                border: 1px solid black;
+                padding-bottom: 3%;
+                z-index: 6;
+                display: none;
+            }
+
+            .header-link-open li{
+                margin-top: 15%;
+            }
+
+            .is-show{
+                display: block;
+            }
+
+            /*各要素を縦並び*/
+            #main {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 10%;
+                left: 0;
+                right: 0;
+            }
+
+            #main-left-text {
+                order: 3;
+                background-color: #f5f5f5;
+                padding-right: 0.5%;
+                padding-left: 1%;
+                font-size: 90%;
+            }
+
+            #main-left-text span {
+                color: #3cb371;
+                font-weight: bold;
+            }
+
+            #main-right-text {
+                order: 2;
+                font-size: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #navi {
+                display: none;
+            }
+
+            #outsid-link {
+                display: none;
+            }
+
+            #link li {
+                margin-top: 4.5%;
+            }
+
+            #map-image {
+                position: relative;
+                order: 1;
+            }
+
+            /*画像を画面縮小に合わせる*/
+            #campus {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /*キャンパスマップ画像を親要素としてボタンを配置*/
+            #button1 {
+                position: absolute;
+                left: 72.7%;
+                top: 43%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                /*カーソールを合わせたら背景色を変更*/
+                #button1:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button2 {
+                position: absolute;
+                left: 54.4%;
+                top: 33%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button2:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button3 {
+                position: absolute;
+                left: 45.5%;
+                top: 41%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button3:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button4 {
+                position: absolute;
+                left: 89%;
+                top: 40.6%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button4:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button5 {
+                position: absolute;
+                left: 35.3%;
+                top: 18.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button5:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button6 {
+                position: absolute;
+                left: 63.4%;
+                top: 55.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button6:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button7 {
+                position: absolute;
+                left: 91.3%;
+                top: 48.1%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button7:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button8 {
+                position: absolute;
+                left: 53.2%;
+                top: 62.3%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button8:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button9 {
+                position: absolute;
+                left: 56.2%;
+                top: 49.8%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button9:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button10 {
+                position: absolute;
+                left: 36.8%;
+                top: 69.3%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button10:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button11 {
+                position: absolute;
+                left: 19.5%;
+                top: 58.7%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button11:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button12 {
+                position: absolute;
+                left: 10.5%;
+                top: 50.6%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button12:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            #button13 {
+                position: absolute;
+                left: 44.5%;
+                top: 59.5%;
+                width: 5%;
+                height: 5%;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3cb371;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #button13:hover {
+                    background-color: #2e8b57;
+                    cursor: pointer;
+                }
+
+            /*多目的広場*/
+            #square {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                padding-bottom: 2%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #square_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #square p {
+                position: absolute;
+                right:0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            /*バツボタン*/
+            #close4 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*欅と鳩カフェ*/
+            #keyaki-cafe {
+                position: absolute;
+                top: 5%;
+                bottom: 5%;
+                background-color: rgba(0,0,0,0.7);
+                padding-top: 0;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #keyaki{
+                position: absolute;
+                top: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #cafe {
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+                
+            }
+
+            #keyaki_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #hatocafe_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #keyaki-cafe p {
+                color: #ffffff;
+                margin: auto;
+            }
+
+            #close13 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*こもれび*/
+            #komorebi {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                padding-bottom: 2%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #komorebi_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #komorebi p {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            #close7 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*ラウンジ売店*/
+            #lounge {
+                position: absolute;
+                top: 15%;
+                bottom: 15%;
+                background-color: rgba(0,0,0,0.7);
+                text-align: center;
+                padding-top: 4.5%;
+                padding-bottom: 2%;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #lounge_phot {
+                width: 90%;
+                height: 90%;
+            }
+
+            #lounge p {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: #ffffff;
+            }
+
+            #close9 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+
+            /*体育館とグラウンド*/
+            #gym-ground {
+                position: absolute;
+                top: 5%;
+                bottom: 5%;
+                background-color: rgba(0,0,0,0.7);
+                padding-top: 0;
+                width: 100%;
+                display: none; /*初期設定は非表示*/
+            }
+
+            #gym {
+                position: absolute;
+                top: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #ground {
+                position: absolute;
+                bottom: 5%;
+                right: 0;
+                left: 5%;
+                display: flex;
+                align-items: center;
+            }
+
+            #gym_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #ground_phot {
+                width: 60%;
+                height: 60%;
+            }
+
+            #gym-ground p {
+                color: #ffffff;
+                margin: auto;
+            }
+
+            #close5 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 5%;
+                height: 6%;
+                background-image: url(close.png);
+                background-size: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+                border: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <p id="site-name">鳩キャン教室ナビ</p>
+        <div id="header-navi">
+            <p id="header-guide-button">？</p>
+            <p id="header-link-button">外部リンク</p>
+        </div>
+    </header>
+
+    <div id="header-open">
+    <ul class ="header-link-open">
+        <li><a href="https://www.dendai.ac.jp/">東京電機大学</a></li>
+        <li><a href="https://portal.sa.dendai.ac.jp/uprx/">UNIPA</a></li>
+        <li><a href="https://els.sa.dendai.ac.jp/webclass/login.php">WebClass</a></li>
+        <li><a href="https://www.mrcl.dendai.ac.jp/mrcl/">総合メディアセンター</a></li>
+    </ul>
+    <p class="header-guide-open">キャンパスマップ上の<span>数字</span>をクリックすると、その号館の詳細な情報を確認することができます。</p>
+    </div>
+
+    <main id="main">
+        <div id="main-left-text">
+            <p><span>1</span>　1号館<br />総合メディアセンター(パソコン実習室)(図書閲覧室)、研究室、ATM</p>
+            <p><span>2</span>　2号館<br />総合メディアセンター（パソコン実習室）、研究室、実験室、夢工房</p>
+            <p><span>3</span>　3号館<br />教室、研究室、化学実験室、アクティブラーニング教室</p>
+            <p><span>4</span>　4号館<br />第1学生食堂「欅」、HATO CAFE、理容室・郵便局</p>
+            <p><span>5</span>　5号館<br />体育館</p>
+            <p><span>6</span>　6号館<br />教室、研究室、実験室</p>
+            <p><span>7</span>　7号館<br />第２学生食堂「komorebi」</p>
+            <p><span>8</span>　8号館<br />教室、物理実験室、研究室</p>
+            <p><span>9</span>　9号館<br />自習室、クラブ・委員会室、ラウンジ・売店、リエゾン施設、談話室</p>
+            <p><span>10</span>　10号館(本館)<br />エントランスホール、事務室、プレゼンテーションホール、メディアルーム、教室、パソコン教室</p>
+            <p><span>11</span>　11号館<br />総合研究所</p>
+            <p><span>12</span>　12号館<br />アトリウム、学習サポートセンター、国際センター鳩山ブランチ、教室、実験室、研究室、バーチャルスタジオ、メディア工房</p>
+            <p><span>13</span>　13号館<br />多目的広場</p>
+        </div>
+
+        <div id="map-image">
+            <img id="campus" src="campus2.png" />
+            <button id="button1">1</button>
+            <button id="button2">2</button>
+            <button id="button3">3</button>
+            <button id="button4">4</button>
+            <button id="button5">5</button>
+            <button id="button6">6</button>
+            <button id="button7">7</button>
+            <button id="button8">8</button>
+            <button id="button9">9</button>
+            <button id="button10">10</button>
+            <button id="button11">11</button>
+            <button id="button12">12</button>
+            <button id="button13">13</button>
+            <div id="square">
+                <img id="square_phot" src="square.jpeg" />
+                <button id="close13"></button>
+                <p>多目的広場</p>
+            </div>
+            <div id="keyaki-cafe">
+                <div id="keyaki">
+                    <img id="keyaki_phot" src="keyaki.jpeg" />
+                    <p>第1学生食堂「欅」</p>
+                </div>
+                <div id="cafe">
+                    <img id="hatocafe_phot" src="hatocafe.jpeg" />
+                    <p>HATO CAFE</p>
+                </div>
+                <button id="close4"></button>
+            </div>
+            <div id="komorebi">
+                <img id="komorebi_phot" src="komorebi.png" />
+                <p>第２学生食堂「komorebi」</p>
+                <button id="close7"></button>
+            </div>
+            <div id="lounge">
+                <img id="lounge_phot" src="lounge.png" />
+                <p>ラウンジ・売店</p>
+                <button id="close9"></button>
+            </div>
+            <div id="gym-ground">
+                <div id="gym">
+                    <img id="gym_phot" src="gym." />
+                    <p>体育館</p>
+                </div>
+                <div id="ground">
+                    <img id="ground_phot" src="ground.jpeg" />
+                    <p>グラウンド</p>
+                </div>
+                <button id="close5"></button>
+            </div>
+        </div>
+
+        <div id="main-right-text">
+            <div id="navi">
+                <p>キャンパスマップ上の<span>数字</span>をクリックすると、その号館の詳細な情報を確認することができます。</p>
+            </div>
+            <div id="outsid-link">
+                <p>外部リンク</p>
+                <ul id="link">
+                    <li><a href="https://www.dendai.ac.jp/">東京電機大学</a></li>
+                    <li><a href="https://portal.sa.dendai.ac.jp/uprx/">UNIPA</a></li>
+                    <li><a href="https://els.sa.dendai.ac.jp/webclass/login.php">WebClass</a></li>
+                    <li><a href="https://www.mrcl.dendai.ac.jp/mrcl/">総合メディアセンター</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <script>
+        document.getElementById("site-name").onclick = function () {
+            location.href = "https://mae0227.github.io/toptest/";
+        }
+
+
+
+        //各号館への遷移
+        document.getElementById("button3").onclick = function () {
+            location.href = "https://mae0227.github.io/floor3test/";
+        }
+
+        //ボタン13を押したら多目的広場の写真を表示
+        document.getElementById("button13").onclick = function () {
+            document.getElementById("square").style.display = "block";
+        }
+        //バツボタンを押したら写真を非表示
+        document.getElementById("close13").onclick = function () {
+            document.getElementById("square").style.display = "none";
+        }
+
+        //ボタン4を押したら欅とHATO CAFEの写真表示
+        document.getElementById("button4").onclick = function () {
+            document.getElementById("keyaki-cafe").style.display = "block";
+        }
+        document.getElementById("close4").onclick = function () {
+            document.getElementById("keyaki-cafe").style.display = "none";
+        }
+
+        //ボタン7を押したらkomorebiの写真を表示
+        document.getElementById("button7").onclick = function () {
+            document.getElementById("komorebi").style.display = "block";
+        }
+        document.getElementById("close7").onclick = function () {
+            document.getElementById("komorebi").style.display = "none";
+        }
+
+        //ボタン9を押したらラウンジの写真を表示
+        document.getElementById("button9").onclick = function () {
+            document.getElementById("lounge").style.display = "block";
+        }
+        document.getElementById("close9").onclick = function () {
+            document.getElementById("lounge").style.display = "none";
+        }
+
+        //ボタン5を押したら体育館とグランドの写真を表示
+        document.getElementById("button5").onclick = function () {
+            document.getElementById("gym-ground").style.display = "block";
+        }
+        document.getElementById("close5").onclick = function () {
+            document.getElementById("gym-ground").style.display = "none";
+        }
+
+        //外部リンクを表示
+        var link = document.querySelector(".header-link-open");
+        var guide = document.querySelector(".header-guide-open");
+        document.getElementById("header-link-button").onclick = function () {
+            if (link.classList.contains("is-show")){
+                link.classList.remove("is-show");
+            }
+            else if (guide.classList.contains("is-show")) {
+                guide.classList.remove("is-show");
+                link.classList.add("is-show");
+            }
+            else {
+                link.classList.add("is-show");
+            }
+        }
+        document.getElementById("header-guide-button").onclick = function () {
+            if (guide.classList.contains("is-show")) {
+                guide.classList.remove("is-show");
+            }
+            else if (link.classList.contains("is-show")) {
+                link.classList.remove("is-show");
+                guide.classList.add("is-show");
+            }
+            else {
+                guide.classList.add("is-show");
+            }
+        }
+        
+
+        
+        
+
+    </script>
+
+
+</body>
+</html>
