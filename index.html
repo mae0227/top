@@ -5,6 +5,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+
         /*PC*/
         @media screen and (min-width: 950px) {
             body {
@@ -1605,7 +1606,7 @@
             busstop.style.display = "none";
         }
 
-        //はじめに開いた時
+        //はじめに開いた時の幅の処理
         if (WindowWidth <= 950) {
             campus.onclick = function () {
                 if (square.style.display = "block") {
@@ -1647,7 +1648,7 @@
             }
         }
 
-        //ウィンドウ幅の変化を検知
+        //ウィンドウ幅の変化を検知->イベント
         window.onresize = function () {
             const winwid = window.innerWidth;
             if (winwid <= 950) {
@@ -1703,7 +1704,7 @@
         }
      
 
-        //外部リンクを表示
+        //外部リンクと使い方を表示
         const link = document.querySelector(".header-link-open");
         const guide = document.querySelector(".header-guide-open");
         document.getElementById("header-link-button").onclick = function () {
