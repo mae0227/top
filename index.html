@@ -10,8 +10,18 @@
             body {
                 
             }
+            #header {
+                position: absolute;
+                top: 0;
+                bottom: 90%;
+                right: 0;
+                left: 0;
+                background-color: rgba(46,86,160,255);
+                text-align: center;
+                color: #fff;
+            }
 
-            #site-name {
+            #site-name{
                 font-size: 120%;
                 font-weight: bold;
             }
@@ -24,11 +34,10 @@
             #header-open{
                 display: none;
             }
-
-
-
             /*各要素を横並び*/
             #main {
+                position: absolute;
+                top: 11%;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
@@ -673,9 +682,14 @@
             body {
             }
 
+
             #site-name {
                 font-size: 120%;
                 font-weight: bold;
+                background-color: rgba(46,86,160,255);
+                padding-left: 2%;
+                padding-right: 2%;
+                color: #fff;
             }
             #site-name:hover{
                 cursor: pointer;
@@ -689,11 +703,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-left: 2%;
-                padding-right: 2%;
                 background-color: #fff;
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
                 z-index: 5;
             }
 
@@ -701,6 +711,7 @@
                 flex-basis: 30%;
                 display: flex;
                 justify-content: right;
+                color: rgba(46,86,160,255);
             }
 
             #header-guide-button:hover {
@@ -708,8 +719,15 @@
                 cursor: pointer;
             }
 
+            #separate {
+                margin-left: 5%;
+                color: rgba(190,190,190,255);
+            }
+
             #header-link-button {
-                margin-left: 10%;
+                margin-left: 5%;
+                margin-right: 5%;
+                color: rgba(46,86,160,255);
             }
 
             #header-link-button:hover{
@@ -802,7 +820,6 @@
             }
 
             #map-image {
-                display: inline-block;
                 position: relative;
                 order: 1;
             }
@@ -815,7 +832,6 @@
 
             /*キャンパスマップ画像を親要素としてボタンを配置*/
             #button1 {
-                display: inline-block;
                 position: absolute;
                 left: 72.7%;
                 top: 43%;
@@ -838,7 +854,6 @@
                 }
 
             #button2 {
-                display: inline-block;
                 position: absolute;
                 left: 54.4%;
                 top: 33%;
@@ -860,7 +875,6 @@
                 }
 
             #button3 {
-                display: inline-block;
                 position: absolute;
                 left: 45.5%;
                 top: 41%;
@@ -882,7 +896,6 @@
                 }
 
             #button4 {
-                display: inline-block;
                 position: absolute;
                 left: 89%;
                 top: 40.6%;
@@ -904,7 +917,6 @@
                 }
 
             #button5 {
-                display: inline-block;
                 position: absolute;
                 left: 35.3%;
                 top: 18.5%;
@@ -926,7 +938,6 @@
                 }
 
             #button6 {
-                display: inline-block;
                 position: absolute;
                 left: 63.4%;
                 top: 55.5%;
@@ -948,7 +959,6 @@
                 }
 
             #button7 {
-                display: inline-block;
                 position: absolute;
                 left: 91.3%;
                 top: 48.1%;
@@ -970,7 +980,6 @@
                 }
 
             #button8 {
-                display: inline-block;
                 position: absolute;
                 left: 53.2%;
                 top: 62.3%;
@@ -992,7 +1001,6 @@
                 }
 
             #button9 {
-                display: inline-block;
                 position: absolute;
                 left: 56.2%;
                 top: 49.8%;
@@ -1014,7 +1022,6 @@
                 }
 
             #button10 {
-                display: inline-block;
                 position: absolute;
                 left: 36.8%;
                 top: 69.3%;
@@ -1036,7 +1043,6 @@
                 }
 
             #button11 {
-                display: inline-block;
                 position: absolute;
                 left: 19.5%;
                 top: 58.7%;
@@ -1058,7 +1064,6 @@
                 }
 
             #button12 {
-                display: inline-block;
                 position: absolute;
                 left: 10.5%;
                 top: 50.6%;
@@ -1080,7 +1085,6 @@
                 }
 
             #button13 {
-                display: inline-block;
                 position: absolute;
                 left: 44.5%;
                 top: 59.5%;
@@ -1102,7 +1106,6 @@
                 }
 
             #button14 {
-                display: inline-block;
                 position: absolute;
                 left: 52.5%;
                 top: 79.5%;
@@ -1411,9 +1414,12 @@
 
 <body>
     <header id="header">
-        <p id="site-name">鳩キャン教室ナビ</p>
+        <div id="site-name">
+            <p>鳩キャン教室ナビ</p>
+        </div>
         <div id="header-navi">
             <p id="header-guide-button">？</p>
+            <p id="separate">|</p>
             <p id="header-link-button">外部リンク</p>
         </div>
     </header>
