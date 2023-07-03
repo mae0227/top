@@ -3,14 +3,12 @@
 /*PC*/
 @media screen and (min-width: 960px) {
     body {
+        display: flex;
+        flex-direction: column;
     }
 
     #header {
-        position: absolute;
-        top: 0;
-        bottom: 90%;
-        right: 0;
-        left: 0;
+        margin-bottom: 1%;
         background-color: rgba(46,86,160,255);
         text-align: center;
         color: #fff;
@@ -31,10 +29,6 @@
     }
     /*各要素を横並び*/
     #main {
-        position: absolute;
-        top: 11%;
-        right:0;
-        left:0;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -679,12 +673,21 @@
         border: none;
     }
 }
-
+#footer {
+    margin-top: 1%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    background-color: rgba(46,86,160,255);
+    color: #fff;
+}
 
 
 /*タブレット*/
-@media screen and (max-width: 960px) and (min-width: 520px){
+@media screen and (max-width: 960px) and (min-width: 520px) {
     body {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -788,10 +791,7 @@
     #main {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 8%;
-        left: 0;
-        right: 0;
+        margin-top: 5%;
     }
 
     #main-left-text {
@@ -807,7 +807,7 @@
             width: 3.5vmax;
             height: 3.5vmax;
             justify-content: center;
-            align-items:center;
+            align-items: center;
             background-color: #3cb371;
             color: #fff;
             font-weight: bold;
@@ -1419,11 +1419,22 @@
         background-color: transparent;
         border: none;
     }
+
+    #footer {
+        margin-top: 1%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        background-color: rgba(46,86,160,255);
+        color: #fff;
+    }
 }
 
 /*スマホ*/
 @media screen and (max-width: 520px){
     body {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -1527,10 +1538,7 @@
     #main {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 8%;
-        left: 0;
-        right: 0;
+        margin-top: 10%;
     }
 
     #main-left-text {
@@ -2157,5 +2165,13 @@
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;
+    }
+    #footer {
+        margin-top: 1%;
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        background-color: rgba(46,86,160,255);
+        color: #fff;
     }
 }
