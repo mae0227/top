@@ -336,8 +336,11 @@
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
             // 取得した位置情報を活用する処理
-            if (35.98654 <= latitude <= 35.98601 && 139.37379 <= longitude <= 139.37437) {
-                square.style.display = "block";
+            if (35.98667 >= latitude >= 35.98654 && 139.37379 <= longitude <= 139.37391) {
+                point10.style.display = "block";
+            }
+            else {
+                point10.style.display = "block";
             }
         }
 
