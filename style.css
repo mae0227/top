@@ -89,9 +89,12 @@
         margin-top: 4.5%;
     }
 
+    #main-center{
+        margin-right: 1%;
+    }
+
     #map-image {
         position: relative;
-        margin-right: 1%;
     }
 
     /*画像を画面縮小に合わせる*/
@@ -100,12 +103,21 @@
         height: auto;
     }
 
+    /**/
     #point10 {
         position: absolute;
         top: 60.5%;
         left: 37.3%;
         width: 4%;
         height: 8%;
+        display: none;
+    }
+
+    #point-text1{
+        text-align: center;
+    }
+
+    #point-text2 {
         display: none;
     }
 
@@ -796,6 +808,7 @@
         display: block;
     }
 
+
     /*各要素を縦並び*/
     #main {
         display: flex;
@@ -804,7 +817,7 @@
     }
 
     #main-left-text {
-        order: 3;
+        order: 2;
         background-color: #f5f5f5;
         padding-right: 0.5%;
         padding-left: 1%;
@@ -823,22 +836,7 @@
         }
 
     #main-right-text {
-        order: 2;
-        font-size: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #navi {
         display: none;
-    }
-
-    #outsid-link {
-        display: none;
-    }
-
-    #link li {
-        margin-top: 4.5%;
     }
 
     #map-image {
@@ -850,6 +848,15 @@
     #campus {
         max-width: 100%;
         height: auto;
+    }
+
+
+    #point-text1 {
+        display: none;
+    }
+
+    #point-text2{
+        text-align: center;
     }
 
     #point10 {
@@ -1561,7 +1568,7 @@
     }
 
     #main-left-text {
-        order: 3;
+        order: 2;
         background-color: #f5f5f5;
         padding-right: 0.5%;
         padding-left: 1%;
@@ -1580,22 +1587,7 @@
         }
 
     #main-right-text {
-        order: 2;
-        font-size: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #navi {
         display: none;
-    }
-
-    #outsid-link {
-        display: none;
-    }
-
-    #link li {
-        margin-top: 4.5%;
     }
 
     #map-image {
@@ -1607,6 +1599,14 @@
     #campus {
         max-width: 100%;
         height: auto;
+    }
+
+    #point-text1 {
+        display: none;
+    }
+
+    #point-text2 {
+        text-align: center;
     }
 
     #point10 {

@@ -47,66 +47,76 @@
             <p><span>14</span>　バス停</p>
         </div>
 
-        <div id="map-image">
-            <img id="campus" src="campus2.png" />
-            <img id="point10" src="point.png" />
-            <button id="button1">1</button>
-            <button id="button2">2</button>
-            <button id="button3">3</button>
-            <button id="button4">4</button>
-            <button id="button5">5</button>
-            <button id="button6">6</button>
-            <button id="button7">7</button>
-            <button id="button8">8</button>
-            <button id="button9">9</button>
-            <button id="button10">10</button>
-            <button id="button11">11</button>
-            <button id="button12">12</button>
-            <button id="button13">13</button>
-            <button id="button14">14</button>
-            <div id="square">
-                <img id="square_phot" src="square.jpeg" />
-                <button id="close13"></button>
-                <p>多目的広場</p>
+        <div id="main-center">
+            <div id="point-text1">
+                <p>あなたは<span id="room-num1">　</span>号館にいる可能性が高いです。</p>
             </div>
-            <div id="keyaki-cafe">
-                <div id="keyaki">
-                    <img id="keyaki_phot" src="keyaki.jpeg" />
-                    <p>第1学生食堂「欅」</p>
+            <div id="map-image">
+                <img id="campus" src="campus2.png" />
+                <img id="point10" src="point.png" />
+                <button id="button1">1</button>
+                <button id="button2">2</button>
+                <button id="button3">3</button>
+                <button id="button4">4</button>
+                <button id="button5">5</button>
+                <button id="button6">6</button>
+                <button id="button7">7</button>
+                <button id="button8">8</button>
+                <button id="button9">9</button>
+                <button id="button10">10</button>
+                <button id="button11">11</button>
+                <button id="button12">12</button>
+                <button id="button13">13</button>
+                <button id="button14">14</button>
+                <div id="square">
+                    <img id="square_phot" src="square.jpeg" />
+                    <button id="close13"></button>
+                    <p>多目的広場</p>
                 </div>
-                <div id="cafe">
-                    <img id="hatocafe_phot" src="hatocafe.jpeg" />
-                    <p>HATO CAFE</p>
+                <div id="keyaki-cafe">
+                    <div id="keyaki">
+                        <img id="keyaki_phot" src="keyaki.jpeg" />
+                        <p>第1学生食堂「欅」</p>
+                    </div>
+                    <div id="cafe">
+                        <img id="hatocafe_phot" src="hatocafe.jpeg" />
+                        <p>HATO CAFE</p>
+                    </div>
+                    <button id="close4"></button>
                 </div>
-                <button id="close4"></button>
-            </div>
-            <div id="komorebi">
-                <img id="komorebi_phot" src="komorebi.png" />
-                <p>第２学生食堂「komorebi」</p>
-                <button id="close7"></button>
-            </div>
-            <div id="lounge">
-                <img id="lounge_phot" src="lounge.png" />
-                <p>ラウンジ・売店</p>
-                <button id="close9"></button>
-            </div>
-            <div id="gym-ground">
-                <div id="gym">
-                    <img id="gym_phot" src="gym." />
-                    <p>体育館</p>
+                <div id="komorebi">
+                    <img id="komorebi_phot" src="komorebi.png" />
+                    <p>第２学生食堂「komorebi」</p>
+                    <button id="close7"></button>
                 </div>
-                <div id="ground">
-                    <img id="ground_phot" src="ground.jpeg" />
-                    <p>グラウンド</p>
+                <div id="lounge">
+                    <img id="lounge_phot" src="lounge.png" />
+                    <p>ラウンジ・売店</p>
+                    <button id="close9"></button>
                 </div>
-                <button id="close5"></button>
+                <div id="gym-ground">
+                    <div id="gym">
+                        <img id="gym_phot" src="gym." />
+                        <p>体育館</p>
+                    </div>
+                    <div id="ground">
+                        <img id="ground_phot" src="ground.jpeg" />
+                        <p>グラウンド</p>
+                    </div>
+                    <button id="close5"></button>
+                </div>
+                <div id="busstop">
+                    <img id="busstop_phot" src="busstop.png" />
+                    <p>バス停</p>
+                    <button id="close14"></button>
+                </div>
             </div>
-            <div id="busstop">
-                <img id="busstop_phot" src="busstop.png" />
-                <p>バス停</p>
-                <button id="close14"></button>
+            <div id="point-text2">
+                <p>あなたは<span id="room-num2">　</span>号館にいる可能性が高いです。</p>
             </div>
         </div>
+
+        
 
         <div id="main-right-text">
             <div id="navi">
@@ -329,6 +339,10 @@
         }
 
 
+        const PointText1 = document.getElementById("point-text1");
+        const PointText2 = document.getElementById("point-text2");
+        const roomnum1 = document.getElementById("room-num1");
+        const roomnum2 = document.getElementById("room-num2");
         const point10 = document.getElementById("point10");
         const watchId = navigator.geolocation.watchPosition(success, error);
 
@@ -336,8 +350,10 @@
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
             // 取得した位置情報を活用する処理
-            if ((35.98667 >= latitude >= 35.98654 && 139.37379 <= longitude <= 139.37391) || (35.98601 <= latitude <= 35.98654 && 139.37379 <= longitude <= 139.37435)) {
+            if ((latitude >= 35.98654　&& latitude <= 35.98667 && longitude >= 139.37379 && longitude <= 139.37391) || (latitude >= 35.98601 && latitude <= 35.98654 && longitude >= 139.37379 && longitude <= 139.37435)) {
                 point10.style.display = "block";
+                roomnum1.innerHTML = "10";
+                roomnum2.innerHTML = "10";
             }
             else {
                 point10.style.display = "none";
