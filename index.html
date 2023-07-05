@@ -49,6 +49,7 @@
 
         <div id="map-image">
             <img id="campus" src="campus2.png" />
+            <img id="point10" src="point.png" />
             <button id="button1">1</button>
             <button id="button2">2</button>
             <button id="button3">3</button>
@@ -326,7 +327,24 @@
                 guide.classList.add("is-show");
             }
         }
-        
+
+
+        const point10 = document.getElementById("point10");
+        const watchId = navigator.geolocation.watchPosition(success, error);
+
+        function success(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            // 取得した位置情報を活用する処理
+            if (35.98654 <= latitude <= 35.98601 && 139.37379 <= longitude <= 139.37437) {
+                square.style.display = "block";
+            }
+        }
+
+        function error(error) {
+            // 位置情報の取得に失敗した場合の処理
+        }
+       
 
     </script>
 
