@@ -24,7 +24,11 @@
         display: none;
     }
 
-    #header-open {
+    .header-link-open {
+        display: none;
+    }
+
+    .header-guide-open{
         display: none;
     }
     /*各要素を横並び*/
@@ -868,7 +872,7 @@
         }
 
     .header-guide-open {
-        position: fixed;
+        position: absolute;
         top: 7%;
         right: 10%;
         left: 30%;
@@ -889,10 +893,10 @@
         }
 
     .header-link-open {
-        position: fixed;
+        position: absolute;
         top: 7%;
         right: 1%;
-        left: 40%;
+        left: 60%;
         font-size: 100%;
         list-style: none;
         background-color: #fff;
@@ -1724,7 +1728,7 @@
         }
 
     .header-guide-open {
-        position: fixed;
+        position: absolute;
         top: 7%;
         right: 10%;
         left: 30%;
@@ -1745,7 +1749,7 @@
         }
 
     .header-link-open {
-        position: fixed;
+        position: absolute;
         top: 7%;
         right: 1%;
         left: 40%;
