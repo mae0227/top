@@ -104,6 +104,85 @@
     }
 
     /**/
+    #point1 {
+        position: absolute;
+        top: 38.5%;
+        left: 73.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point2 {
+        position: absolute;
+        top: 28.2%;
+        left: 54.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point3 {
+        position: absolute;
+        top: 36.5%;
+        left: 46%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+    #point4 {
+        position: absolute;
+        top: 36%;
+        left: 89.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point5 {
+        position: absolute;
+        top: 14.2%;
+        left: 35.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point6 {
+        position: absolute;
+        top: 51.2%;
+        left: 64.1%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+    #point7 {
+        position: absolute;
+        top: 53.5%;
+        left: 91.8%;
+        width: 4%;
+        height: 4%;
+        transform: rotate(180deg);
+        display: none;
+    }
+
+    #point8 {
+        position: absolute;
+        top: 57.8%;
+        left: 53.5%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point9 {
+        position: absolute;
+        top: 45.2%;
+        left: 56.8%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
     #point10 {
         position: absolute;
         top: 64.5%;
@@ -126,6 +205,15 @@
         position: absolute;
         top: 46.2%;
         left: 11%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point13 {
+        position: absolute;
+        top: 55.2%;
+        left: 45%;
         width: 4%;
         height: 4%;
         display: none;
@@ -744,10 +832,6 @@
         }
 
     #header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -831,7 +915,6 @@
     #main {
         display: flex;
         flex-direction: column;
-        margin-top: 5%;
     }
 
     #main-left-text {
@@ -877,6 +960,88 @@
         text-align: center;
     }
 
+    #point1 {
+        position: absolute;
+        top: 38.5%;
+        left: 73.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point2 {
+        position: absolute;
+        top: 28.2%;
+        left: 54.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point3 {
+        position: absolute;
+        top: 36.5%;
+        left: 46%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point4 {
+        position: absolute;
+        top: 36%;
+        left: 89.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point5 {
+        position: absolute;
+        top: 14.2%;
+        left: 35.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point6 {
+        position: absolute;
+        top: 51.2%;
+        left: 64.1%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point7 {
+        position: absolute;
+        top: 53.5%;
+        left: 91.8%;
+        width: 4%;
+        height: 4%;
+        transform: rotate(180deg);
+        display: none;
+    }
+
+    #point8 {
+        position: absolute;
+        top: 57.8%;
+        left: 53.5%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point9 {
+        position: absolute;
+        top: 45.2%;
+        left: 56.8%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
     #point10 {
         position: absolute;
         top: 64.5%;
@@ -899,6 +1064,15 @@
         position: absolute;
         top: 46.2%;
         left: 11%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point13 {
+        position: absolute;
+        top: 55.2%;
+        left: 45%;
         width: 4%;
         height: 4%;
         display: none;
@@ -1514,10 +1688,6 @@
         }
 
     #header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1600,7 +1770,6 @@
     #main {
         display: flex;
         flex-direction: column;
-        margin-top: 10%;
     }
 
     #main-left-text {
@@ -1645,6 +1814,88 @@
         text-align: center;
     }
 
+    #point1 {
+        position: absolute;
+        top: 38.5%;
+        left: 73.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point2 {
+        position: absolute;
+        top: 28.2%;
+        left: 54.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point3 {
+        position: absolute;
+        top: 36.5%;
+        left: 46%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point4 {
+        position: absolute;
+        top: 36%;
+        left: 89.3%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point5 {
+        position: absolute;
+        top: 14.2%;
+        left: 35.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point6 {
+        position: absolute;
+        top: 51.2%;
+        left: 64.1%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point7 {
+        position: absolute;
+        top: 53.5%;
+        left: 91.8%;
+        width: 4%;
+        height: 4%;
+        transform: rotate(180deg);
+        display: none;
+    }
+
+    #point8 {
+        position: absolute;
+        top: 57.8%;
+        left: 53.5%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point9 {
+        position: absolute;
+        top: 45.2%;
+        left: 56.8%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
     #point10 {
         position: absolute;
         top: 64.5%;
@@ -1667,6 +1918,15 @@
         position: absolute;
         top: 46.2%;
         left: 11%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point13 {
+        position: absolute;
+        top: 55.2%;
+        left: 45%;
         width: 4%;
         height: 4%;
         display: none;

@@ -53,9 +53,19 @@
             </div>
             <div id="map-image">
                 <img id="campus" src="campus2.png" />
+                <img id="point1" src="point1.png" />
+                <img id="point2" src="point1.png" />
+                <img id="point3" src="point1.png" />
+                <img id="point4" src="point1.png" />
+                <img id="point5" src="point1.png" />
+                <img id="point6" src="point1.png" />
+                <img id="point7" src="point1.png" />
+                <img id="point8" src="point1.png" />
+                <img id="point9" src="point1.png" />
                 <img id="point10" src="point1.png" />
                 <img id="point11" src="point1.png" />
                 <img id="point12" src="point1.png" />
+                <img id="point13" src="point1.png" />
                 <button id="button1">1</button>
                 <button id="button2">2</button>
                 <button id="button3">3</button>
@@ -345,34 +355,129 @@
         const PointText2 = document.getElementById("point-text2");
         const roomnum1 = document.getElementById("room-num1");
         const roomnum2 = document.getElementById("room-num2");
+        const point1 = document.getElementById("point1");
+        const point2 = document.getElementById("point2");
+        const point3 = document.getElementById("point3");
+        const point4 = document.getElementById("point4");
+        const point5 = document.getElementById("point5");
+        const point6 = document.getElementById("point6");
+        const point7 = document.getElementById("point7");
+        const point8 = document.getElementById("point8");
+        const point9 = document.getElementById("point9");
         const point10 = document.getElementById("point10");
         const point11 = document.getElementById("point11");
         const point12 = document.getElementById("point12");
+        const point13 = document.getElementById("point13");
         const watchId = navigator.geolocation.watchPosition(success, error);
 
         function success(position) {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
             // 取得した位置情報を活用する処理
-            if ((latitude >= 35.98654　&& latitude <= 35.98667 && longitude >= 139.37379 && longitude <= 139.37391) || (latitude >= 35.98601 && latitude <= 35.98654 && longitude >= 139.37379 && longitude <= 139.37435)) {
+
+            if ((latitude >= 35.98642 && latitude <= 35.98665 && longitude >= 139.37228 && longitude <= 139.37257) || (latitude >= 35.98642 && latitude <= 35.98661 && longitude >= 139.37195 && longitude <= 139.37228) || (latitude >= 35.98638 && latitude <= 35.98642 && longitude >= 139.37190 && longitude <= 139.37220) || (latitude >= 35.98632 && latitude <= 35.98638 && longitude >= 139.37187 && longitude <= 139.37228) || (latitude >= 35.98620 && latitude <= 35.98632 && longitude >= 139.37184 && longitude <= 139.37214) || (latitude >= 35.98613 && latitude <= 35.98620 && longitude >= 139.37184 && longitude <= 139.37208) ) {
+                point1.style.display = "block";
+                roomnum1.innerHTML = "1";
+                roomnum2.innerHTML = "1";
+            }
+            else {
+                point1.style.display = "none";
+               
+            }
+
+            if (latitude >= 35.98508 && latitude <= 35.98609 && longitude >= 139.37162 && longitude <= 139.37207) {
+                point2.style.display = "block";
+                roomnum1.innerHTML = "2";
+                roomnum2.innerHTML = "2";
+            }
+            else {
+                point2.style.display = "none";
+                
+            }
+
+            if ((latitude >= 35.98542 && latitude <= 35.98606 && longitude >= 139.37239 && longitude <= 139.37268) || (latitude >= 35.98510 && latitude <= 35.98542 && longitude >= 139.37236 && longitude<=139.37260))  {
+                point3.style.display = "block";
+                roomnum1.innerHTML = "3";
+                roomnum2.innerHTML = "3";
+            }
+            else {
+                point3.style.display = "none";
+                
+            }
+
+            if (latitude >= 35.98651 && latitude <= 35.98689 && longitude >= 139.37152 && longitude <= 139.37188) {
+                point4.style.display = "block";
+                roomnum1.innerHTML = "4";
+                roomnum2.innerHTML = "4";
+            }
+            else {
+                point4.style.display = "none";
+                
+            }
+
+            if (latitude >= 35.98371 && latitude <= 35.98418 && longitude >= 139.37025 && longitude <= 139.37092) {
+                point5.style.display = "block";
+                roomnum1.innerHTML = "5";
+                roomnum2.innerHTML = "5";
+            }
+            else {
+                point5.style.display = "none";
+                
+            }
+
+            if (latitude >= 35.98647 && latitude <= 35.98661 && longitude >= 139.37263 && longitude <= 139.37337) {
+                point6.style.display = "block";
+                roomnum1.innerHTML = "6";
+                roomnum2.innerHTML = "6";
+            }
+            else {
+                point6.style.display = "none";
+                
+            }
+
+            if (latitude >= 35.98680 && latitude <= 35.98709 && longitude >= 139.37190 && longitude <= 139.37226) {
+                point7.style.display = "block";
+                roomnum1.innerHTML = "7";
+                roomnum2.innerHTML = "7";
+            }
+            else {
+                point7.style.display = "none";
+               
+            }
+
+            if (latitude >= 35.98647 && latitude <= 35.98662 && longitude >= 139.37342 && longitude <= 139.37368) {
+                point8.style.display = "block";
+                roomnum1.innerHTML = "8";
+                roomnum2.innerHTML = "8";
+            }
+            else {
+                point8.style.display = "none";
+                
+            }
+
+            if (latitude >= 35.98611 && latitude <= 35.98630 && longitude >= 139.37259 && longitude <= 139.37303) {
+                point9.style.display = "block";
+                roomnum1.innerHTML = "9";
+                roomnum2.innerHTML = "9";
+            }
+            else {
+                point9.style.display = "none";
+                
+            }
+
+            if ((latitude >= 35.98654　&& latitude <= 35.98667 && longitude >= 139.37375 && longitude <= 139.37391) || (latitude >= 35.98596 && latitude <= 35.98654 && longitude >= 139.37375 && longitude <= 139.37439)) {
                 point10.style.display = "block";
                 roomnum1.innerHTML = "10";
                 roomnum2.innerHTML = "10";
+               
             }
             else {
                 point10.style.display = "none";
+                
             }
 
-            if ((latitude >= 35.98553 && latitude <= 35.98585 && longitude >= 139.37378 && longitude <= 139.37422) || (latitude >= 35.98540 && latitude <= 35.98553 && longitude >= 139.37378 && longitude <= 139.37401)) {
-                point11.style.display = "block";
-                roomnum1.innerHTML = "11";
-                roomnum2.innerHTML = "11";
-            }
-            else {
-                point11.style.display = "none";
-            }
 
-            if (latitude >= 35.98507 && latitude <= 35.98549 && longitude >= 139.37402 && longitude <= 139.37422) {
+            if ((latitude >= 35.98540 && latitude <= 35.98583 && longitude >= 139.37377 && longitude <= 139.37422) || (latitude >= 35.98507 && latitude <= 35.98583 && longitude >= 139.37392 && longitude <= 139.37422)){
                 point12.style.display = "block";
                 roomnum1.innerHTML = "12";
                 roomnum2.innerHTML = "12";
@@ -380,6 +485,17 @@
             else {
                 point12.style.display = "none";
             }
+
+            if (latitude >= 35.98597 && latitude <= 35.98641 && longitude >= 139.37317 && longitude <= 139.37370) {
+                point9.style.display = "block";
+                roomnum1.innerHTML = "9";
+                roomnum2.innerHTML = "9";
+            }
+            else {
+                point9.style.display = "none";
+
+            }
+
 
             
         }
