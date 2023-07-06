@@ -106,10 +106,28 @@
     /**/
     #point10 {
         position: absolute;
-        top: 60.5%;
+        top: 64.5%;
         left: 37.3%;
         width: 4%;
-        height: 8%;
+        height: 4%;
+        display: none;
+    }
+
+    #point11 {
+        position: absolute;
+        top: 54.2%;
+        left: 19.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point12 {
+        position: absolute;
+        top: 46.2%;
+        left: 11%;
+        width: 4%;
+        height: 4%;
         display: none;
     }
 
@@ -861,10 +879,28 @@
 
     #point10 {
         position: absolute;
-        top: 60.5%;
+        top: 64.5%;
         left: 37.3%;
         width: 4%;
-        height: 8%;
+        height: 4%;
+        display: none;
+    }
+
+    #point11 {
+        position: absolute;
+        top: 54.2%;
+        left: 19.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point12 {
+        position: absolute;
+        top: 46.2%;
+        left: 11%;
+        width: 4%;
+        height: 4%;
         display: none;
     }
 
@@ -1611,10 +1647,28 @@
 
     #point10 {
         position: absolute;
-        top: 60.5%;
+        top: 64.5%;
         left: 37.3%;
         width: 4%;
-        height: 8%;
+        height: 4%;
+        display: none;
+    }
+
+    #point11 {
+        position: absolute;
+        top: 54.2%;
+        left: 19.9%;
+        width: 4%;
+        height: 4%;
+        display: none;
+    }
+
+    #point12 {
+        position: absolute;
+        top: 46.2%;
+        left: 11%;
+        width: 4%;
+        height: 4%;
         display: none;
     }
 

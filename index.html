@@ -53,7 +53,9 @@
             </div>
             <div id="map-image">
                 <img id="campus" src="campus2.png" />
-                <img id="point10" src="point.png" />
+                <img id="point10" src="point1.png" />
+                <img id="point11" src="point1.png" />
+                <img id="point12" src="point1.png" />
                 <button id="button1">1</button>
                 <button id="button2">2</button>
                 <button id="button3">3</button>
@@ -344,6 +346,8 @@
         const roomnum1 = document.getElementById("room-num1");
         const roomnum2 = document.getElementById("room-num2");
         const point10 = document.getElementById("point10");
+        const point11 = document.getElementById("point11");
+        const point12 = document.getElementById("point12");
         const watchId = navigator.geolocation.watchPosition(success, error);
 
         function success(position) {
@@ -358,6 +362,26 @@
             else {
                 point10.style.display = "none";
             }
+
+            if ((latitude >= 35.98553 && latitude <= 35.98585 && longitude >= 139.37378 && longitude <= 139.37422) || (latitude >= 35.98540 && latitude <= 35.98553 && longitude >= 139.37378 && longitude <= 139.37401)) {
+                point11.style.display = "block";
+                roomnum1.innerHTML = "11";
+                roomnum2.innerHTML = "11";
+            }
+            else {
+                point11.style.display = "none";
+            }
+
+            if (latitude >= 35.98507 && latitude <= 35.98549 && longitude >= 139.37402 && longitude <= 139.37422) {
+                point11.style.display = "block";
+                roomnum1.innerHTML = "11";
+                roomnum2.innerHTML = "11";
+            }
+            else {
+                point11.style.display = "none";
+            }
+
+            
         }
 
         function error(error) {
