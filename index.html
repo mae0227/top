@@ -23,7 +23,7 @@
                 <li><a href="https://els.sa.dendai.ac.jp/webclass/login.php">WebClass</a></li>
                 <li><a href="https://www.mrcl.dendai.ac.jp/mrcl/">総合メディアセンター</a></li>
         </ul>
-        <p class="header-guide-open">キャンパスマップ上の<span>数字</span>をクリックすると、その号館の詳細な情報を確認することができます。</p>
+        <p class="header-guide-open">キャンパスマップ上の<span>数字</span>をクリックすると、その号館の詳細な情報を確認することができます。<br /><img src="point1.png" />あなたの位置情報</p>
     </header>
 
     <main id="main">
@@ -474,7 +474,16 @@
             }
 
 
-            if ((latitude >= 35.98540 && latitude <= 35.98583 && longitude >= 139.37377 && longitude <= 139.37422) || (latitude >= 35.98507 && latitude <= 35.98583 && longitude >= 139.37392 && longitude <= 139.37422)){
+            if (latitude >= 35.98554 && latitude <= 35.98583 && longitude >= 139.37413 && longitude <= 139.37423) {
+                point11.style.display = "block";
+                roomnum1.innerHTML = "11";
+                roomnum2.innerHTML = "11";
+            }
+            else {
+                point11.style.display = "none";
+            }
+
+            if ((latitude >= 35.98540 && latitude <= 35.98583 && longitude >= 139.37377 && longitude <= 139.37406) || (latitude >= 35.98507 && latitude <= 35.98550 && longitude >= 139.37392 && longitude <= 139.37422)){
                 point12.style.display = "block";
                 roomnum1.innerHTML = "12";
                 roomnum2.innerHTML = "12";
