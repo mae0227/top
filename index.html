@@ -155,12 +155,31 @@
 
 
         //各号館への遷移
+        document.getElementById("button1").onclick = function () {
+            location.href = "";
+        }
+        document.getElementById("button2").onclick = function () {
+            location.href = "";
+        }
         document.getElementById("button3").onclick = function () {
-            location.href = "https://mae0227.github.io/floor3test/";
+            location.href = "https://mae0227.github.io/floor3/";
+        }
+        document.getElementById("button6").onclick = function () {
+            location.href = "";
+        }
+        document.getElementById("button8").onclick = function () {
+            location.href = "";
+        }
+        document.getElementById("button9").onclick = function () {
+            location.href = "";
+        }
+        document.getElementById("button2").onclick = function () {
+            location.href = "";
         }
 
 
 
+        //写真の表示
         const square = document.getElementById("square");
         const keyaki = document.getElementById("keyaki-cafe");
         const komorebi = document.getElementById("komorebi");
@@ -220,7 +239,7 @@
             busstop.style.display = "none";
         }
 
-        //はじめに開いた時の幅の処理
+        //はじめに開いた時のウィンドウ幅の処理
         if (WindowWidth <= 950) {
             campus.onclick = function () {
                 if (square.style.display = "block") {
@@ -348,6 +367,7 @@
         }
 
 
+        //位置情報　仮実装
         const PointText1 = document.getElementById("point-text1");
         const PointText2 = document.getElementById("point-text2");
         const roomnum1 = document.getElementById("room-num1");
@@ -368,8 +388,8 @@
         const watchId = navigator.geolocation.watchPosition(success, error);
 
         function success(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
+            const latitude = position.coords.latitude;//緯度
+            const longitude = position.coords.longitude;//経度
             // 取得した位置情報を活用する処理
 
             if ((latitude >= 35.98642 && latitude <= 35.98665 && longitude >= 139.37228 && longitude <= 139.37257) || (latitude >= 35.98642 && latitude <= 35.98661 && longitude >= 139.37195 && longitude <= 139.37228) || (latitude >= 35.98638 && latitude <= 35.98642 && longitude >= 139.37190 && longitude <= 139.37220) || (latitude >= 35.98632 && latitude <= 35.98638 && longitude >= 139.37187 && longitude <= 139.37228) || (latitude >= 35.98620 && latitude <= 35.98632 && longitude >= 139.37184 && longitude <= 139.37214) || (latitude >= 35.98613 && latitude <= 35.98620 && longitude >= 139.37184 && longitude <= 139.37208) ) {
