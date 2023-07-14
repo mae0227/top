@@ -42,6 +42,7 @@
             <p><span>12</span>　12号館<br />アトリウム、学習サポートセンター、国際センター鳩山ブランチ、教室、実験室、研究室、バーチャルスタジオ、メディア工房</p>
             <p><span>13</span>　13号館<br />多目的広場</p>
             <p><span>14</span>　バス停</p>
+            <p><span>15</span>　駐車場</p>
         </div>
 
         <div id="main-center">
@@ -77,6 +78,7 @@
                 <button id="button12">12</button>
                 <button id="button13">13</button>
                 <button id="button14">14</button>
+                <button id="button15">15</button>
                 <div id="square">
                     <img id="square_phot" src="square.jpeg" />
                     <button id="close13"></button>
@@ -118,6 +120,11 @@
                     <img id="busstop_phot" src="busstop.png" />
                     <p>バス停</p>
                     <button id="close14"></button>
+                </div>
+                <div id="parking">
+                    <img id="parking_phot" src="parking.png" />
+                    <p>駐車場</p>
+                    <button id="close15"></button>
                 </div>
             </div>
             <!--<div id="point-text2">
@@ -190,6 +197,7 @@
         const gym = document.getElementById("gym-ground");
         const campus = document.getElementById("campus");
         const busstop = document.getElementById("busstop");
+        const parking = document.getElementById("parking");
         const WindowWidth = window.innerWidth;
         
 
@@ -234,12 +242,20 @@
             gym.style.display = "none";
         }
 
-        //バス停表示
+        //バス停写真の表示
         document.getElementById("button14").onclick = function () {
             busstop.style.display = "block";
         }
         document.getElementById("close14").onclick = function () {
             busstop.style.display = "none";
+        }
+
+        //駐車場写真の表示
+        document.getElementById("button15").onclick = function () {
+            parking.style.display = "block";
+        }
+        document.getElementById("close15").onclick = function () {
+            parking.style.display = "none";
         }
 
         //はじめに開いた時のウィンドウ幅の処理
@@ -263,6 +279,9 @@
                 if (busstop.style.display = "block") {
                     busstop.style.display = "none";
                 }
+                if (parking.style.display = "block") {
+                    parking.style.display = "none";
+                }
             }
             square.onclick = function () {
                 square.style.display = "none";
@@ -281,6 +300,9 @@
             }
             busstop.onclick = function () {
                 busstop.style.display = "none";
+            }
+            parking.onclick = function () {
+                parking.style.display = "none";
             }
         }
 
@@ -308,6 +330,9 @@
                     if (busstop.style.display = "block") {
                         busstop.style.display = "none";
                     }
+                    if (parking.style.display = "block") {
+                        parking.style.display = "none";
+                    }
                 }
                 square.onclick = function () {
                     square.style.display = "none";
@@ -327,6 +352,9 @@
                 busstop.onclick = function () {
                     busstop.style.display = "none";
                 }
+                parking.onclick = function () {
+                    parking.style.display = "none";
+                }
             }
             //950より大きい場合イベントハンドラ無効
             else {
@@ -337,6 +365,7 @@
                 lounge.onclick = null;
                 gym.onclick = null;
                 busstop.onclick = null;
+                parking.onclick = null;
             }
         }
      
