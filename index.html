@@ -187,8 +187,6 @@
             location.href = "https://mae0227.github.io/floor11-12/";
         }
 
-
-
         //写真の表示
         const square = document.getElementById("square");
         const keyaki = document.getElementById("keyaki-cafe");
@@ -258,59 +256,13 @@
             parking.style.display = "none";
         }
 
-        //はじめに開いた時のウィンドウ幅の処理
-        if (WindowWidth <= 950) {
-            campus.onclick = function () {
-                if (square.style.display = "block") {
-                    square.style.display = "none";
-                }
-                if (keyaki.style.display = "block") {
-                    keyaki.style.display = "none";
-                }
-                if (komorebi.style.display = "block") {
-                    komorebi.style.display = "none";
-                }
-                if (lounge.style.display = "block") {
-                    lounge.style.display = "none";
-                }
-                if (gym.style.display = "block") {
-                    gym.style.display = "none";
-                }
-                if (busstop.style.display = "block") {
-                    busstop.style.display = "none";
-                }
-                if (parking.style.display = "block") {
-                    parking.style.display = "none";
-                }
-            }
-            square.onclick = function () {
-                square.style.display = "none";
-            }
-            keyaki.onclick = function () {
-                keyaki.style.display = "none";
-            }
-            komorebi.onclick = function () {
-                komorebi.style.display = "none";
-            }
-            lounge.onclick = function () {
-                lounge.style.display = "none";
-            }
-            gym.onclick = function () {
-                gym.style.display = "none";
-            }
-            busstop.onclick = function () {
-                busstop.style.display = "none";
-            }
-            parking.onclick = function () {
-                parking.style.display = "none";
-            }
-        }
-
-
-        //ウィンドウ幅の変化を検知->イベント
-        window.onresize = function () {
-            const winwid = window.innerWidth;
-            if (winwid <= 950) {
+        
+        //ウィンドウ幅
+        const mediaQuery = window.matchMedia("(max-width: 960px)");
+        handle(mediaQuery);//ページが読み込まれた際に実行
+        mediaQuery.addListener(handle);//ウィンドウサイズの変更を監視
+        function handle(mw) {
+            if (mw.matches) {
                 campus.onclick = function () {
                     if (square.style.display = "block") {
                         square.style.display = "none";
@@ -356,7 +308,7 @@
                     parking.style.display = "none";
                 }
             }
-            //950より大きい場合イベントハンドラ無効
+            //960より大きい場合無効
             else {
                 campus.onclick = null;
                 square.onclick = null;
@@ -366,6 +318,98 @@
                 gym.onclick = null;
                 busstop.onclick = null;
                 parking.onclick = null;
+            }
+        }
+
+        //main-left-textの数字から遷移
+        const div = document.getElementById("main-left-text");
+        const span = div.getElementsByTagName("span");
+
+        span[0].onclick = function () {
+            location.href = "https://mae0227.github.io/floor1-2/";
+        }
+        span[1].onclick = function () {
+            location.href = "https://mae0227.github.io/floor1-2/";
+        }
+        span[2].onclick = function () {
+            location.href = "https://mae0227.github.io/floor3/";
+        }
+        span[3].onclick = function () {
+            keyaki.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[4].onclick = function () {
+            gym.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[5].onclick = function () {
+            location.href = "https://mae0227.github.io/floor6-8/";
+        }
+        span[6].onclick = function () {
+            komorebi.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[7].onclick = function () {
+            location.href = "https://mae0227.github.io/floor6-8/";
+        }
+        span[8].onclick = function () {
+            lounge.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[9].onclick = function () {
+            location.href = "https://mae0227.github.io/floor10/";
+        }
+        span[10].onclick = function () {
+            location.href = "https://mae0227.github.io/floor11-12/";
+        }
+        span[11].onclick = function () {
+            location.href = "https://mae0227.github.io/floor11-12/";
+        }
+        span[12].onclick = function () {
+            square.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[13].onclick = function () {
+            busstop.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            }
+        }
+        span[14].onclick = function () {
+            parking.style.display = "block";
+            if (mediaQuery.matches) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
             }
         }
      
