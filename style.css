@@ -843,6 +843,7 @@
         background-color: rgba(0,0,0,0.7);
         text-align: center;
         padding-top: 4.5%;
+        padding-bottom: 2%;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
@@ -1768,6 +1769,7 @@
         background-color: rgba(0,0,0,0.7);
         text-align: center;
         padding-top: 4.5%;
+        padding-bottom: 2%;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
@@ -2688,6 +2690,7 @@
         background-color: rgba(0,0,0,0.7);
         text-align: center;
         padding-top: 4.5%;
+        padding-bottom: 2%;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
