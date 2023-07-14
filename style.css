@@ -560,33 +560,50 @@
         }
 
     /*多目的広場*/
-    #square {
+    #square-kitchencar {
         position: absolute;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 5%;
         background-color: rgba(0,0,0,0.7);
-        text-align: center;
-        padding-top: 4.5%;
+        padding-top: 0;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
 
-    #square_phot {
-        width: 90%;
-        height: 90%;
-    }
-
-    #square p {
+    #square {
         position: absolute;
+        top: 5%;
         right: 0;
-        left: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        color: #ffffff;
+        left: 5%;
+        display: flex;
+        align-items: center;
     }
 
-    /*バツボタン*/
-    #close4 {
+    #kitchencar {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+        left: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    #square_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #kitchencar_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #square-kitchencar p {
+        color: #ffffff;
+        margin: auto;
+    }
+
+    #close13 {
         position: absolute;
         top: 0;
         right: 0;
@@ -644,7 +661,7 @@
         margin: auto;
     }
 
-    #close13 {
+    #close4 {
         position: absolute;
         top: 0;
         right: 0;
@@ -1482,34 +1499,50 @@
         }
 
     /*多目的広場*/
-    #square {
+    #square-kitchencar {
         position: absolute;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 5%;
         background-color: rgba(0,0,0,0.7);
-        text-align: center;
-        padding-top: 4.5%;
-        padding-bottom: 2%;
+        padding-top: 0;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
 
-    #square_phot {
-        width: 90%;
-        height: 90%;
-    }
-
-    #square p {
+    #square {
         position: absolute;
+        top: 5%;
         right: 0;
-        left: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        color: #ffffff;
+        left: 5%;
+        display: flex;
+        align-items: center;
     }
 
-    /*バツボタン*/
-    #close4 {
+    #kitchencar {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+        left: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    #square_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #kitchencar_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #square-kitchencar p {
+        color: #ffffff;
+        margin: auto;
+    }
+
+    #close13 {
         position: absolute;
         top: 0;
         right: 0;
@@ -1567,7 +1600,7 @@
         margin: auto;
     }
 
-    #close13 {
+    #close4 {
         position: absolute;
         top: 0;
         right: 0;
@@ -2403,35 +2436,52 @@
             background-color: #2e8b57;
             cursor: pointer;
         }
+
     /*多目的広場*/
-    #square {
+    #square-kitchencar {
         position: absolute;
-        top: 15%;
-        bottom: 15%;
+        top: 5%;
+        bottom: 5%;
         background-color: rgba(0,0,0,0.7);
-        text-align: center;
-        padding-top: 4.5%;
-        padding-bottom: 2%;
+        padding-top: 0;
         width: 100%;
         display: none; /*初期設定は非表示*/
     }
 
-    #square_phot {
-        width: 90%;
-        height: 90%;
-    }
-
-    #square p {
+    #square {
         position: absolute;
+        top: 5%;
         right: 0;
-        left: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        color: #ffffff;
+        left: 5%;
+        display: flex;
+        align-items: center;
     }
 
-    /*バツボタン*/
-    #close4 {
+    #kitchencar {
+        position: absolute;
+        bottom: 5%;
+        right: 0;
+        left: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    #square_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #kitchencar_phot {
+        width: 60%;
+        height: 60%;
+    }
+
+    #square-kitchencar p {
+        color: #ffffff;
+        margin: auto;
+    }
+
+    #close13 {
         position: absolute;
         top: 0;
         right: 0;
@@ -2489,7 +2539,7 @@
         margin: auto;
     }
 
-    #close13 {
+    #close4 {
         position: absolute;
         top: 0;
         right: 0;
